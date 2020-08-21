@@ -1,0 +1,50 @@
+{
+  "name": "actions-githubapp-installationaccesstoken",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Generate a GitHub App Installation Access Token from a GitHub App Private Key",
+  "main": "./lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint ./src/**/*.ts",
+    "package": "ncc build --source-map",
+    "test": "jest",
+    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inloco/actions-githubapp-installationaccesstoken.git"
+  },
+  "keywords": [
+    "actions",
+    "github",
+    "app",
+    "installation",
+    "access",
+    "token"
+  ],
+  "author": "In Loco",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@octokit/auth-app": "^2.4.14",
+    "@octokit/request": "^5.4.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/parser": "^3.9.1",
+    "@vercel/ncc": "^0.23.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-github": "^4.1.1",
+    "eslint-plugin-jest": "^23.20.0",
+    "jest": "^24.9.0",
+    "jest-circus": "^26.4.1",
+    "js-yaml": "^3.14.0",
+    "prettier": "2.0.5",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.9.7"
+  }
+}

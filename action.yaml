@@ -1,0 +1,16 @@
+name: GitHub App Installation Access Token
+description: Generate a GitHub App Installation Access Token from a GitHub App Private Key
+author: In Loco
+inputs:
+  app-id:
+    description: GitHub App Id
+    required: true
+  app-pk:
+    description: GitHub App Private Key
+    required: true
+  instl-id:
+    description: GitHub App Installation Id
+    required: false
+runs:
+  using: node12
+  main: ./dist/index.js

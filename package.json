@@ -28,7 +28,7 @@
   "author": "In Loco",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@octokit/auth-app": "^2.4.14",
     "@octokit/request": "^5.4.7"
   },
